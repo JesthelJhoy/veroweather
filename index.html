@@ -2,31 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vero Weather</title>
-    <h1>VERO WEATHER</h1>
-    <h2>Real time updates, anytime, anywhere.</h2>
+		<link rel="stylesheet" href="src/style.css">
   </head>
-  <div class="container">
-    <body>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <span>
-          <input type="submit" value="Search" />
-        </span>
+			<body>
+       <div class="container">
+				<form class="search-form">
+        <input type="search" placeholder="Enter a city..." required class="enter-city-input"/>
+          <input type="submit" value="Search" class="enter-city-button"/>
       </form>
-
       </header>
-      <main>
-        <div class="current-weather">
+     
+				<main>
+        <div class="weather-city-data">
           <div>
-            <h1>Milan</h1>
-            <p>
+            <h1 class="city-name">Milan</h1>
+            <p class="city-current-weather">
               Saturday 15:32, moderate rain <br />
               Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
-            </p>
+						</p>
           </div>
-          <div class="current-weather">☀️ 14°C</div>
+          <div class="city-current-temperature">
+						<div class="city-icon">🌤️</div>
+            <div class="city-temperature">12</div>
+            <div class="city-unit">°C</div>
         </div>
       </main>
      
@@ -36,6 +36,8 @@
         <a href="#" target="_blank"> on GitHub</a> and
         <a href="#" target="_blank">hosted on Netlify.</a>
       </footer>
+		</div>
     </body>
-  </div>
 </html>
+
+

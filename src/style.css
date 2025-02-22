@@ -1,0 +1,91 @@
+body {
+  background-image: url(https://pics.freeartbackgrounds.com/fullhd/Sky_and_Clouds_Background-357.jpg);
+  background-size: cover;
+}
+a {
+  color: #2269a3;
+}
+
+main {
+  padding: 30px 0;
+  margin-bottom: 10px;
+}
+.container {
+  display: block;
+  width: 600px;
+  height: 350px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 5px solid transparent;
+  border-radius: 30px;
+  background-color: #fbfbfb;
+  box-shadow: 0 4px 8px rgba(69, 63, 63, 0.2), 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.enter-city-input {
+  background-color: #c4d9ff;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
+.enter-city-button {
+  background: #2269a3;
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 6px;
+  color: white;
+}
+
+.weather-city-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.city-name {
+  margin: 0;
+  line-height: 48px;
+  font-size: 50px;
+}
+
+.city-current-weather {
+  margin: 0;
+  line-height: 20px;
+  font-size: 16px;
+  color: black;
+  padding: 50px 0 20px 0;
+}
+
+.city-current-weather strong {
+  color: #3b8d99;
+}
+.city-current-temperature {
+  display: flex;
+}
+
+.city-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
+
+.city-temperature {
+  font-size: 88px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.city-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
+footer {
+  border-top: 3px solid #3b8d99;
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
