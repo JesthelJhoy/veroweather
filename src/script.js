@@ -16,6 +16,7 @@ function updateWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   dayElement.innerHTML = formatDate(date);
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -56,9 +57,13 @@ function searchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form-city");
 searchFormElement.addEventListener("submit", searchSubmit);
 
-searchCity("Milan");
+function getForecast(city) {
+  let apiKey = "4a023e13f571a05co054c10eb0t37f34";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
 
-function displayForecast() {
+function displayForecast(response) {
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -79,4 +84,5 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHtml;
 }
 
-displayForecast();
+getForecast();
+searchCity("Milan");
